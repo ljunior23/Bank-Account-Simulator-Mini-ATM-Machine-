@@ -1,8 +1,3 @@
-"""
-Mini ATM Machine - Enhanced Version
-Fixed all bugs and added improved features
-"""
-
 class BankAccount:
     """Represents a bank account with secure operations"""
     
@@ -71,7 +66,7 @@ class BankAccount:
         else:
             self.__pin = new_pin
             self.__add_transaction("PIN changed", 0)
-            print("✅ PIN successfully changed.")
+            print("PIN successfully changed.")
             return True
     
     def view_transaction_history(self, limit=5):
